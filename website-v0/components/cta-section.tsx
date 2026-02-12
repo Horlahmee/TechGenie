@@ -7,7 +7,7 @@ export function CTASection() {
     <SectionWrapper id="contact" className="bg-card/50">
       <div className="mx-auto max-w-2xl text-center">
         <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 mb-6">
-          <Mail className="h-7 w-7 text-primary" />
+          <Mail className="h-7 w-7 text-primary" aria-hidden="true" />
         </div>
 
         <h2 className="font-sans text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">

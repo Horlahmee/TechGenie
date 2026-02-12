@@ -21,7 +21,7 @@ export function HeroSection() {
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mb-8">
           <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
           <span className="font-body text-xs font-medium text-muted-foreground tracking-wide uppercase">
-            AI-Powered Systems
+            AI Systems for Revenue, Ops & Markets
           </span>
         </div>
 
@@ -29,18 +29,18 @@ export function HeroSection() {
           AI Systems That Drive{" "}
           <span className="text-primary">Revenue</span>,{" "}
           <span className="text-primary">Operations</span> &{" "}
-          <span className="text-primary">Market</span> Outcomes
+          <span className="text-primary">Market</span> Decisions
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty font-body text-lg leading-relaxed text-muted-foreground md:text-xl">
-          We build precision-engineered AI systems for SMB operators, crypto
-          researchers, and founding teams who need measurable results, not
-          experiments.
+          We build production-grade AI systems for SMB operators, crypto
+          teams, and founding crews who need clear, measurable outcomes
+          in weeks, not quarters.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <EmailCTA location="hero" size="lg">
-            <Mail className="mr-2 h-4 w-4" />
+            <Mail className="mr-2 h-4 w-4" aria-hidden="true" />
             Email TechGenie
           </EmailCTA>
           <a
@@ -48,7 +48,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-6 py-3 font-body text-sm font-medium text-secondary-foreground transition-colors duration-200 hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             See Services
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
       </div>

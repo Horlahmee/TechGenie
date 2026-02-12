@@ -61,7 +61,7 @@ export function AudienceSection() {
             className="rounded-xl border border-border bg-card p-8"
           >
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-              <audience.icon className="h-6 w-6 text-primary" />
+              <audience.icon className="h-6 w-6 text-primary" aria-hidden="true" />
             </div>
 
             <h3 className="font-sans text-xl font-bold text-card-foreground">

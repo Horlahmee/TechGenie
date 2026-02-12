@@ -21,7 +21,7 @@ export function SiteFooter() {
               TechGenie
             </p>
             <p className="mt-2 font-body text-sm leading-relaxed text-muted-foreground">
-              AI systems for revenue, operations, and markets. Precision-engineered for measurable outcomes.
+              AI systems for revenue, operations, and markets — engineered for clear, measurable outcomes.
             </p>
           </div>
 
