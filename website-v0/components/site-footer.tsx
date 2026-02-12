@@ -44,7 +44,7 @@ export function SiteFooter() {
           {/* Email CTA */}
           <div>
             <a
-              href="mailto:techgeniexyz@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
               onClick={() =>
                 trackEvent("cta_email_click", { location: "footer" })
               }
@@ -67,3 +67,4 @@ export function SiteFooter() {
     </footer>
   )
 }
+

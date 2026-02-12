@@ -120,7 +120,7 @@ export function ServicesGrid() {
             </div>
 
             <a
-              href="mailto:techgeniexyz@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
               onClick={() =>
                 trackEvent("service_interest_click", { service: service.id })
               }
@@ -135,3 +135,4 @@ export function ServicesGrid() {
     </SectionWrapper>
   )
 }
+
