@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+outreach/email/.env.local
+__pycache__/
+*.pyc
