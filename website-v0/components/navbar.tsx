@@ -21,7 +21,7 @@ export function Navbar() {
         className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4"
         aria-label="Main navigation"
       >
-        <a href="#" className="text-xl font-sans font-bold tracking-tight text-foreground">
+        <a href="#hero" className="text-xl font-sans font-bold tracking-tight text-foreground">
           TechGenie
         </a>
 

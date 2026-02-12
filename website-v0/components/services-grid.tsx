@@ -75,7 +75,7 @@ export function ServicesGrid() {
             className="group flex flex-col rounded-xl border border-border bg-card p-8 transition-colors duration-200 hover:border-primary/30"
           >
             <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-              <service.icon className="h-6 w-6 text-primary" />
+              <service.icon className="h-6 w-6 text-primary" aria-hidden="true" />
             </div>
 
             <h3 className="font-sans text-xl font-bold text-card-foreground">

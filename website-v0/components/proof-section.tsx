@@ -87,7 +87,7 @@ export function ProofSection() {
             className="flex items-start gap-4 rounded-xl border border-border bg-card p-5"
           >
             <div className="flex-shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10">
-              <signal.icon className="h-4 w-4 text-accent" />
+              <signal.icon className="h-4 w-4 text-accent" aria-hidden="true" />
             </div>
             <p className="font-body text-sm leading-relaxed text-card-foreground">
               {signal.text}

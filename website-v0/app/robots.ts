@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://techgenie.com/sitemap.xml",
+    sitemap: "https://techgeniexyz.vercel.app/sitemap.xml",
   }
 }

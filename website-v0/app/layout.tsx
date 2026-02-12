@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     "MVP development",
     "AI systems",
   ],
+  metadataBase: new URL("https://techgeniexyz.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "TechGenie | AI Systems for Revenue, Operations & Markets",
     description:
@@ -60,6 +64,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+        >
+          Skip to main content
+        </a>
         {children}
         <JsonLd />
       </body>
@@ -75,6 +85,7 @@ function JsonLd() {
     description:
       "AI-powered systems for revenue operations, market research, and rapid MVP delivery.",
     email: "techgeniexyz@gmail.com",
+      url: "https://techgeniexyz.vercel.app",
     serviceType: [
       "AI Automation",
       "Revenue Operations",
