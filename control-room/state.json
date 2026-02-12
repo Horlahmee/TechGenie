@@ -1,0 +1,38 @@
+{
+  "updatedAt": "2026-02-12 13:56 WAT",
+  "kpis": {
+    "Outreach Sent": 0,
+    "Replies": 0,
+    "Calls Booked": 0,
+    "Deals Closed": 0,
+    "Revenue": "$0"
+  },
+  "agents": [
+    {"name":"COO Super Genie","role":"Coordinator","status":"busy","currentTask":"Dispatching lead research","lastPing":"just now"},
+    {"name":"Research Agent","role":"Lead sourcing","status":"busy","currentTask":"Compile 30 leads","lastPing":"just now"},
+    {"name":"Sales Agent","role":"Outreach","status":"ok","currentTask":"Awaiting lead list","lastPing":"1m ago"},
+    {"name":"Dev Agent","role":"Builds","status":"ok","currentTask":"Awaiting assignment","lastPing":"2m ago"},
+    {"name":"Ops Agent","role":"Automation","status":"ok","currentTask":"Awaiting assignment","lastPing":"2m ago"},
+    {"name":"Trading Agent","role":"Market tooling","status":"warn","currentTask":"Paused (non-trading mode)","lastPing":"3m ago"}
+  ],
+  "tasks": [
+    {"id":"P-001-T01","task":"Research 30 qualified leads","owner":"Research Agent","status":"Doing","due":"Today"},
+    {"id":"P-001-T02","task":"Prepare first outreach batch","owner":"Sales Agent","status":"Todo","due":"Today"},
+    {"id":"P-001-T03","task":"Set up control room dashboard","owner":"Dev Agent","status":"Done","due":"Today"}
+  ],
+  "ceoBrief": {
+    "wins": [
+      "TechGenie Company OS created",
+      "Specialist agents configured",
+      "Control room v1 deployed"
+    ],
+    "risks": [
+      "No pipeline activity yet",
+      "Need outreach execution discipline"
+    ],
+    "decisions": [
+      "Approve final pricing ladder",
+      "Choose outreach segment priority for tomorrow"
+    ]
+  }
+}
