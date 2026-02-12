@@ -15,13 +15,18 @@ Then open:
 - Phone (same Wi‑Fi): http://<YOUR_PC_LAN_IP>:8788/dashboard.html
 
 ## Update data
-Edit `state.json` to update:
-- KPI numbers
-- agent statuses/tasks
-- active tasks
-- CEO brief
+Manual: edit `state.json` directly.
+
+Automatic sync from real outputs:
+```powershell
+python control-room/sync_state.py
+```
+
+This currently auto-updates Research task/agent status based on:
+- `reports/leads-30.md`
+- `reports/leads-30.csv`
 
 ## Next upgrades
-- Auto-sync with task files
 - Webhook updates from agent runs
 - Historical KPI charting
+- More auto-derived task statuses
