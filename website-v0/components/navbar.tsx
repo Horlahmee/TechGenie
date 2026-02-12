@@ -41,6 +41,8 @@ export function Navbar() {
 
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={() => trackEvent("cta_email_click", { location: "navbar" })}
           className="hidden rounded-lg bg-primary px-5 py-2.5 font-body text-sm font-medium text-primary-foreground transition-colors duration-200 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background md:inline-flex"
         >
@@ -76,6 +78,8 @@ export function Navbar() {
             <li className="pt-2">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => {
                   trackEvent("cta_email_click", { location: "navbar_mobile" })
                   setMobileOpen(false)

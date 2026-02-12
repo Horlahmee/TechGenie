@@ -20,7 +20,9 @@ export function EmailCTA({
 }: EmailCTAProps) {
   return (
     <a
-      href="mailto:techgeniexyz@gmail.com?subject=TechGenie%20project%20inquiry"
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
+      target="_blank"
+      rel="noopener noreferrer"
       onClick={() => trackEvent("cta_email_click", { location })}
       className={cn(
         "inline-flex items-center justify-center rounded-lg font-body font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
