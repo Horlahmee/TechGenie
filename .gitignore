@@ -2,5 +2,12 @@
 .env.*
 !.env.example
 outreach/email/.env.local
+
+# Python
 __pycache__/
 *.pyc
+
+# Generated artifacts
+outreach/email/logs/
+outreach/**/*.pdf
+reports/*.pdf
