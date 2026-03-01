@@ -1,46 +1,37 @@
 import { Clock, Layers, GitBranch, CheckCircle2 } from "lucide-react"
 import { SectionWrapper } from "@/components/section-wrapper"
 
-const STATS = [
-  {
-    value: "1-2 Weeks",
-    label: "Typical Delivery Cycle",
-    description: "From scoping to functional deployment",
-  },
-  {
-    value: "60-80%",
-    label: "Ops Overhead Reduction",
-    description: "Across automated workflow implementations",
-  },
-  {
-    value: "3x Faster",
-    label: "Research Throughput",
-    description: "With AI-curated market analysis pipelines",
-  },
-  {
-    value: "Production",
-    label: "Grade Quality",
-    description: "Every delivery is deploy-ready, not prototype-only",
-  },
-]
-
-const TRUST_SIGNALS = [
+const PRINCIPLES = [
   {
     icon: Clock,
-    text: "Compressed delivery timelines without cutting corners on quality",
+    title: "Fast Time-to-Value",
+    description:
+      "Most projects start delivering visible process improvements within the first implementation sprint.",
   },
   {
     icon: Layers,
-    text: "Full-stack technical breadth across AI, data, and product engineering",
+    title: "Workflow-First Engineering",
+    description:
+      "We map real operational bottlenecks first, then build agent systems around measurable business outcomes.",
   },
   {
     icon: GitBranch,
-    text: "Documented, version-controlled codebases with clean handoff",
+    title: "Documented Delivery",
+    description:
+      "Every build includes version-controlled implementation, handoff notes, and operating guidance.",
   },
   {
     icon: CheckCircle2,
-    text: "Structured process with weekly syncs and milestone-based deliverables",
+    title: "Reliability by Design",
+    description:
+      "Approval gates, logs, and failure-path testing are built into delivery, not added as an afterthought.",
   },
+]
+
+const PROOF_PLACEHOLDERS = [
+  "Case Study 01 (TBD): Healthcare intake + scheduling automation -> baseline vs after KPI impact",
+  "Case Study 02 (TBD): Logistics exception-routing agent -> baseline vs after KPI impact",
+  "Case Study 03 (TBD): Real estate lead qualification + follow-up -> baseline vs after KPI impact",
 ]
 
 export function ProofSection() {
@@ -48,58 +39,49 @@ export function ProofSection() {
     <SectionWrapper id="proof" className="bg-card/50">
       <div className="text-center mb-16">
         <p className="font-body text-sm font-medium uppercase tracking-wider text-primary mb-3">
-          Results
+          Proof & Method
         </p>
         <h2 className="font-sans text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-          Measurable Outcomes, Delivered
+          Measurable Outcomes, Verified Through Delivery
         </h2>
         <p className="mt-4 mx-auto max-w-2xl font-body text-muted-foreground leading-relaxed">
-          We focus on outcomes you can measure. Here are the performance
-          benchmarks our systems are engineered to deliver.
+          We build around measurable KPIs and publish audited proof as client permissions allow.
+          Until then, we share our delivery principles and baseline-vs-after methodology.
         </p>
       </div>
 
-      {/* Stats grid */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-16">
-        {STATS.map((stat) => (
+      <div className="grid gap-6 sm:grid-cols-2 mb-16">
+        {PRINCIPLES.map((item) => (
           <div
-            key={stat.label}
-            className="rounded-xl border border-border bg-card p-6 text-center"
+            key={item.title}
+            className="rounded-xl border border-border bg-card p-6"
           >
-            <p className="font-sans text-3xl font-bold text-primary">
-              {stat.value}
-            </p>
-            <p className="mt-1 font-sans text-sm font-semibold text-card-foreground">
-              {stat.label}
-            </p>
-            <p className="mt-1 font-body text-xs text-muted-foreground">
-              {stat.description}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* Trust signals */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        {TRUST_SIGNALS.map((signal) => (
-          <div
-            key={signal.text}
-            className="flex items-start gap-4 rounded-xl border border-border bg-card p-5"
-          >
-            <div className="flex-shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10">
-              <signal.icon className="h-4 w-4 text-accent" aria-hidden="true" />
+            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+              <item.icon className="h-5 w-5 text-primary" aria-hidden="true" />
             </div>
-            <p className="font-body text-sm leading-relaxed text-card-foreground">
-              {signal.text}
+            <p className="font-sans text-lg font-semibold text-card-foreground">
+              {item.title}
+            </p>
+            <p className="mt-2 font-body text-sm leading-relaxed text-muted-foreground">
+              {item.description}
             </p>
           </div>
         ))}
       </div>
 
-      <p className="mt-8 text-center font-body text-xs text-muted-foreground">
-        Performance metrics are illustrative benchmarks based on typical
-        engagement outcomes. Actual results vary by project scope and context.
-      </p>
+      <div className="rounded-xl border border-border bg-card p-6">
+        <p className="font-sans text-lg font-semibold text-card-foreground mb-3">
+          Public Case Studies (Current Status)
+        </p>
+        <ul className="space-y-2">
+          {PROOF_PLACEHOLDERS.map((item) => (
+            <li key={item} className="flex items-start gap-2 font-body text-sm text-muted-foreground">
+              <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
     </SectionWrapper>
   )
 }

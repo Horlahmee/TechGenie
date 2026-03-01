@@ -14,37 +14,37 @@ const FAQS = [
     id: "pricing",
     question: "How does pricing work?",
     answer:
-      "We scope every engagement individually based on complexity, timeline, and deliverables. Most projects are quoted as fixed-price milestones after a discovery call. This gives you cost certainty and avoids open-ended billing. For ongoing work, we offer monthly retainers.",
+      "We publish clear ranges by offer type, then finalize scope-based pricing after discovery. Typical ranges: QuickStart Sprint ($1,500-$3,500), Core Agent Ops Build ($4,000-$9,000), Managed Agent Stack ($800-$3,000/month), Vertical Systems ($3,500-$12,000), Advisory ($500-$2,500), and AI Usage Education/Training ($300-$2,000).",
   },
   {
     id: "timeline",
     question: "What are typical timelines?",
     answer:
-      "Most projects are delivered in 1-3 weeks depending on scope. MVPs and bounty builds often ship in 5-10 days. Revenue automation systems typically take 2-3 weeks for a fully production-ready deployment. We always provide a clear timeline before starting.",
+      "Most initial agent implementations are delivered in focused sprints, typically 2-6 weeks depending on workflow complexity, integrations, and safety requirements. We define milestone timelines before build starts.",
   },
   {
     id: "collaboration",
     question: "How do you collaborate with clients?",
     answer:
-      "We use asynchronous communication (email or Slack) supplemented by weekly sync calls. You get a shared project brief, milestone tracking, and access to working demos throughout the build. We move fast but keep you in the loop at every step.",
+      "We run a structured delivery flow: discovery, scope lock, build sprints, testing, and deployment. You get milestone visibility, working demos, and written documentation at handoff.",
   },
   {
     id: "data-privacy",
     question: "How do you handle data and privacy?",
     answer:
-      "We take data security seriously. All client data is handled with strict access controls. We sign NDAs when requested, never share or reuse proprietary data, and build systems with security best practices including encryption, access management, and audit logging.",
+      "Client data remains client-owned. We follow least-access principles, scoped credentials, and documented change controls. Sensitive actions stay behind explicit human approvals with operational logging for traceability.",
   },
   {
     id: "support",
     question: "What happens after delivery?",
     answer:
-      "Every project includes full documentation and a structured handoff session. We provide a 2-week support window post-delivery for bug fixes and clarifications. For ongoing needs, we offer maintenance retainers to keep your systems optimized and updated.",
+      "Every build includes documentation and handoff support. Teams can continue with managed optimization retainers for tuning, monitoring, and iterative workflow improvements.",
   },
   {
     id: "tech-stack",
-    question: "What technologies do you work with?",
+    question: "What tools and integrations do you support?",
     answer:
-      "We work across the modern stack: Python, TypeScript/JavaScript, Next.js, Node.js, and major AI/ML frameworks. For data, we use PostgreSQL, Redis, and various APIs. We choose the right tools for each project rather than forcing a single stack.",
+      "Typical integrations include Email/Google Workspace, Telegram, WhatsApp pathways, Slack, Notion, Airtable, HubSpot/Pipedrive/Zoho, Google Calendar/Calendly, webhooks, and custom APIs. Deployment can run on cloud platforms like Vercel or client-owned infrastructure.",
   },
 ]
 

@@ -1,39 +1,39 @@
-import { Building2, TrendingUp, Users } from "lucide-react"
+import { HeartPulse, Truck, Building2 } from "lucide-react"
 import { SectionWrapper } from "@/components/section-wrapper"
 import { EmailCTA } from "@/components/email-cta"
 
 const AUDIENCES = [
   {
+    icon: HeartPulse,
+    title: "Healthcare Specialist Services",
+    tagline: "Clinics, dental practices, and outpatient teams",
+    bullets: [
+      "Automate patient intake, triage, and follow-up workflows",
+      "Improve scheduling, reminders, and no-show prevention",
+      "Support claims and revenue-cycle task routing",
+      "Reduce admin load while improving service consistency",
+    ],
+  },
+  {
+    icon: Truck,
+    title: "Logistics & Delivery Operators",
+    tagline: "Fleet, transport, and fulfillment teams",
+    bullets: [
+      "Automate dispatch support and exception handling",
+      "Improve proof-of-delivery and claims processing flows",
+      "Route escalations faster with cleaner accountability",
+      "Track operational bottlenecks through KPI summaries",
+    ],
+  },
+  {
     icon: Building2,
-    title: "SMB Operators",
-    tagline: "Efficiency and predictable growth",
+    title: "Real Estate Agencies",
+    tagline: "Sales, leasing, and property operations",
     bullets: [
-      "Automate repetitive revenue and ops workflows",
-      "Unify data across CRM, analytics, and communication tools",
-      "Get clear dashboards without hiring a data team",
-      "Scale operations without scaling headcount",
-    ],
-  },
-  {
-    icon: TrendingUp,
-    title: "Crypto Builders & Traders",
-    tagline: "Better research, faster execution",
-    bullets: [
-      "Build custom monitoring for on-chain and market data",
-      "Automate research synthesis from multiple sources",
-      "Ship trading tools and dashboards quickly",
-      "Stay ahead of market signals with real-time alerts",
-    ],
-  },
-  {
-    icon: Users,
-    title: "Founders & Hackathon Teams",
-    tagline: "Rapid MVP delivery and technical leverage",
-    bullets: [
-      "Turn your idea into a working product in days",
-      "Ship polished bounty submissions with clean code",
-      "Get architectural guidance and implementation in one package",
-      "Launch with confidence using production-ready systems",
+      "Automate lead qualification and follow-up cadence",
+      "Coordinate viewings and listing operations faster",
+      "Improve leasing operations and tenant communication",
+      "Reduce manual admin leakage across the deal cycle",
     ],
   },
 ]
@@ -43,14 +43,14 @@ export function AudienceSection() {
     <SectionWrapper id="audience" className="bg-card/50">
       <div className="text-center mb-16">
         <p className="font-body text-sm font-medium uppercase tracking-wider text-primary mb-3">
-          Who We Serve
+          Priority Verticals
         </p>
         <h2 className="font-sans text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-          Built for Builders Who Ship
+          Built for Teams With Repetitive Operational Work
         </h2>
         <p className="mt-4 mx-auto max-w-2xl font-body text-muted-foreground leading-relaxed">
-          Whether you run a business, trade markets, or build products, our
-          systems are designed for people who value speed, precision, and results.
+          We currently focus on verticals where agent systems can quickly improve response speed,
+          workflow consistency, and measurable operational outcomes.
         </p>
       </div>
 
@@ -85,11 +85,11 @@ export function AudienceSection() {
 
             <div className="mt-6">
               <EmailCTA
-                location={`audience-${audience.title.toLowerCase().replace(/\s+/g, "-")}`}
+                location={`vertical-${audience.title.toLowerCase().replace(/\s+/g, "-")}`}
                 size="default"
                 variant="outline"
               >
-                Start a Conversation
+                Discuss Use Case
               </EmailCTA>
             </div>
           </div>

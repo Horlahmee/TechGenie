@@ -38,6 +38,10 @@ export function HeroSection() {
           quarters — autonomous where safe, human-approved where critical.
         </p>
 
+        <p className="mx-auto mt-4 max-w-2xl font-body text-sm text-accent">
+          Automate the Grind, Scale the Outcome.
+        </p>
+
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <EmailCTA location="hero" size="lg">
             <Mail className="mr-2 h-4 w-4" aria-hidden="true" />

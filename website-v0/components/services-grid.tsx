@@ -11,7 +11,7 @@ const SERVICES = [
     problem:
       "Manual workflows, fragmented tools, and bottlenecks that slow growth and burn team bandwidth.",
     approach:
-      "We build custom AI pipelines that connect your data sources, automate repeatable processes, and surface actionable insights.",
+      "We build role-based AI agent systems that connect your data sources, automate repeatable workflows, and surface actionable insights.",
     outcomes: [
       "Reduce manual ops overhead by 60-80%",
       "Unify fragmented data across platforms",

@@ -20,11 +20,12 @@ export const metadata: Metadata = {
   description:
     "TechGenie builds automated AI agent systems for revenue, operations, and market execution with measurable outcomes and human-safe controls.",
   keywords: [
-    "AI automation",
-    "revenue operations",
-    "crypto research",
-    "MVP development",
-    "AI systems",
+    "AI agent systems",
+    "business workflow automation",
+    "healthcare automation",
+    "logistics automation",
+    "real estate automation",
+    "AI usage training",
   ],
   metadataBase: new URL("https://techgeniexyz.vercel.app"),
   alternates: {
@@ -87,10 +88,12 @@ function JsonLd() {
     email: "techgeniexyz@gmail.com",
       url: "https://techgeniexyz.vercel.app",
     serviceType: [
-      "AI Automation",
-      "Revenue Operations",
-      "Crypto Research Tooling",
-      "MVP Development",
+      "AI Agent Systems",
+      "Revenue and Operations Automation",
+      "Healthcare Workflow Automation",
+      "Logistics Workflow Automation",
+      "Real Estate Workflow Automation",
+      "AI Usage Education and Training",
     ],
   }
 
