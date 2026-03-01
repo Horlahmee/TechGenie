@@ -1,6 +1,6 @@
 "use client"
 
-import { BarChart3, LineChart, Rocket, ArrowRight } from "lucide-react"
+import { BarChart3, Building2, GraduationCap, ArrowRight } from "lucide-react"
 import { SectionWrapper } from "@/components/section-wrapper"
 import { trackEvent } from "@/lib/analytics"
 
@@ -13,7 +13,7 @@ const SERVICES = [
     approach:
       "We build role-based AI agent systems that connect your data sources, automate repeatable workflows, and surface actionable insights.",
     outcomes: [
-      "Reduce manual ops overhead by 60-80%",
+      "Reduce manual ops overhead with measurable workflow improvements",
       "Unify fragmented data across platforms",
       "Automate lead scoring, follow-up sequencing, and reporting",
       "Free your team to focus on high-leverage work",
@@ -21,34 +21,34 @@ const SERVICES = [
     id: "revenue-ops",
   },
   {
-    icon: LineChart,
-    title: "Crypto & Market Research Tooling",
+    icon: Building2,
+    title: "Vertical Agent Systems",
     problem:
-      "Information overload, slow research cycles, and missed signals in fast-moving crypto and financial markets.",
+      "High-repetition operational work in healthcare, logistics, and real estate creates avoidable delays and service inconsistency.",
     approach:
-      "We build research infrastructure that aggregates, filters, and analyzes market data in real-time, so you act on signal, not noise.",
+      "We design niche-specific agent workflows for intake, scheduling, follow-up, exception handling, and KPI reporting.",
     outcomes: [
-      "Improve research throughput with AI-curated feeds",
-      "Monitor on-chain and off-chain data automatically",
-      "Generate structured market briefs on demand",
-      "Accelerate decision-making with custom dashboards",
+      "Faster response and coordination cycles",
+      "Lower operational leakage across core workflows",
+      "Improved process consistency across teams",
+      "Clearer execution visibility through KPI summaries",
     ],
-    id: "crypto-research",
+    id: "vertical-systems",
   },
   {
-    icon: Rocket,
-    title: "Rapid MVP & Bounty Builds",
+    icon: GraduationCap,
+    title: "AI Usage Education & Agent Adoption Training",
     problem:
-      "Slow development cycles, unclear scoping, and difficulty turning ideas into working products quickly.",
+      "Teams adopt AI tools without clear standards, causing inconsistent output quality and workflow misuse.",
     approach:
-      "We scope, design, and ship functional MVPs in compressed timelines, built for iteration and real user feedback.",
+      "We train teams and individuals on practical prompting, safe AI use, and day-to-day operation of agent systems.",
     outcomes: [
-      "Go from idea to working prototype in 1-2 weeks",
-      "Ship with clean architecture ready for scale",
-      "Get a deployable product, not just a mockup",
-      "Win bounties with polished, functional submissions",
+      "Faster AI adoption with practical operating habits",
+      "Higher output quality and decision consistency",
+      "Reduced misuse and operational confusion",
+      "Internal capability to run and improve agent workflows",
     ],
-    id: "mvp-builds",
+    id: "ai-training",
   },
 ]
 
@@ -63,8 +63,8 @@ export function ServicesGrid() {
           Three Pillars of AI Agent Delivery
         </h2>
         <p className="mt-4 mx-auto max-w-2xl font-body text-muted-foreground leading-relaxed">
-          Each engagement is scoped to a specific problem and delivered as a
-          production-ready system with clear documentation.
+          Each engagement is scoped to a specific workflow problem and delivered as a
+          production-ready system with clear documentation and governance controls.
         </p>
       </div>
 
@@ -135,4 +135,3 @@ export function ServicesGrid() {
     </SectionWrapper>
   )
 }
-
