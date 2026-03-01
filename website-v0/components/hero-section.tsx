@@ -22,12 +22,12 @@ export function HeroSection() {
               </div>
 
               <h1 className="max-w-3xl text-balance font-sans text-4xl font-bold leading-[1.04] tracking-tight md:text-[62px] lg:text-7xl">
-                Build an <span className="tg-gradient-text">AI Agent Workforce</span> That Actually Runs Operations
+                Turn Repetitive Ops Into an <span className="tg-gradient-text">AI Agent Engine</span>
               </h1>
 
               <p className="mt-6 max-w-2xl text-pretty font-body text-base leading-relaxed text-muted-foreground md:text-lg">
-                We design, ship, and manage production-grade agent systems for healthcare,
-                logistics, and real estate teams — with clear accountability and human approval for sensitive actions.
+                We build and manage agent systems that run intake, follow-up, coordination, and reporting
+                for healthcare, logistics, and real estate teams — with human approval on sensitive actions.
               </p>
 
               <p className="mt-4 font-body text-sm text-accent">
