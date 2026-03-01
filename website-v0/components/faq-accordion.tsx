@@ -69,7 +69,7 @@ export function FAQAccordion() {
             <AccordionItem
               key={faq.id}
               value={faq.id}
-              className="rounded-xl border border-border bg-card px-6 data-[state=open]:border-primary/30"
+              className="tg-card px-6 data-[state=open]:border-primary/40"
             >
               <AccordionTrigger
                 onClick={() =>

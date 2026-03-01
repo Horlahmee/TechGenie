@@ -58,7 +58,7 @@ export function AudienceSection() {
         {AUDIENCES.map((audience) => (
           <div
             key={audience.title}
-            className="rounded-xl border border-border bg-card p-8"
+            className="tg-card p-8"
           >
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
               <audience.icon className="h-6 w-6 text-primary" aria-hidden="true" />

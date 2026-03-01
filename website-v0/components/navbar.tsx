@@ -16,13 +16,13 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 bg-background/65 backdrop-blur-2xl">
       <nav
         className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4"
         aria-label="Main navigation"
       >
         <a href="#hero" className="text-xl font-sans font-bold tracking-tight text-foreground">
-          TechGenie
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">TechGenie</span>
         </a>
 
         {/* Desktop nav */}

@@ -46,7 +46,7 @@ export function ValueCards() {
         {VALUES.map((item) => (
           <div
             key={item.title}
-            className="group rounded-xl border border-border bg-card p-6 transition-colors duration-200 hover:border-primary/30 hover:bg-card/80"
+            className="group tg-card p-6 transition-colors duration-200 hover:border-primary/40 hover:bg-card"
           >
             <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
               <item.icon className="h-5 w-5 text-primary" aria-hidden="true" />

@@ -44,7 +44,7 @@ export function SectionWrapper({
       id={id}
       className={cn("py-20 md:py-28", className)}
     >
-      <div className="mx-auto max-w-[1200px] px-6">{children}</div>
+      <div className="mx-auto max-w-[1240px] px-6 md:px-8">{children}</div>
     </section>
   )
 }

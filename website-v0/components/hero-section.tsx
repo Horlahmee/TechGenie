@@ -17,8 +17,8 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto max-w-[1200px] px-6 py-24 text-center md:py-32">
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mb-8">
+      <div className="relative tg-grid-bg mx-auto max-w-[1200px] rounded-3xl border border-border/40 px-6 py-24 text-center md:py-32">
+        <div className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-secondary/70 px-4 py-1.5 mb-8 backdrop-blur">
           <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
           <span className="font-body text-xs font-medium text-muted-foreground tracking-wide uppercase">
             Automated AI Agent Builder Agency

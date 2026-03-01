@@ -54,7 +54,7 @@ export function ProofSection() {
         {PRINCIPLES.map((item) => (
           <div
             key={item.title}
-            className="rounded-xl border border-border bg-card p-6"
+            className="tg-card p-6"
           >
             <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
               <item.icon className="h-5 w-5 text-primary" aria-hidden="true" />
@@ -69,7 +69,7 @@ export function ProofSection() {
         ))}
       </div>
 
-      <div className="rounded-xl border border-border bg-card p-6">
+      <div className="tg-card p-6">
         <p className="font-sans text-lg font-semibold text-card-foreground mb-3">
           Public Case Studies (Current Status)
         </p>
