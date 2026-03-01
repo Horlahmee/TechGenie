@@ -39,7 +39,7 @@ export function Navbar() {
         </ul>
 
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
+          href="mailto:hello@techgeniehq.com?subject=TechGenie%20project%20inquiry"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackEvent("cta_email_click", { location: "navbar" })}
@@ -74,7 +74,7 @@ export function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=techgeniexyz@gmail.com&su=TechGenie%20project%20inquiry"
+                href="mailto:hello@techgeniehq.com?subject=TechGenie%20project%20inquiry"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

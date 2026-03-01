@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "real estate automation",
     "AI usage training",
   ],
-  metadataBase: new URL("https://techgeniexyz.vercel.app"),
+  metadataBase: new URL("https://techgeniehq.com"),
   alternates: {
     canonical: "/",
   },
@@ -85,8 +85,8 @@ function JsonLd() {
     name: "TechGenie",
     description:
       "Automated AI agent systems for revenue, operations, and market execution.",
-    email: "techgeniexyz@gmail.com",
-      url: "https://techgeniexyz.vercel.app",
+    email: "hello@techgeniehq.com",
+      url: "https://techgeniehq.com",
     serviceType: [
       "AI Agent Systems",
       "Revenue and Operations Automation",

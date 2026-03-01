@@ -34,7 +34,7 @@ export function CTASection() {
         </div>
 
         <p className="mt-6 font-body text-sm text-muted-foreground">
-          techgeniexyz@gmail.com — No forms, no friction. Just reply by email to start.
+          hello@techgeniehq.com — No forms, no friction. Just reply by email to start.
         </p>
       </div>
     </SectionWrapper>
