@@ -21,21 +21,21 @@ export function HeroSection() {
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mb-8">
           <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
           <span className="font-body text-xs font-medium text-muted-foreground tracking-wide uppercase">
-            AI Systems for Revenue, Ops & Markets
+            Automated AI Agent Builder Agency
           </span>
         </div>
 
         <h1 className="mx-auto max-w-4xl text-balance font-sans text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
-          AI Systems That Drive{" "}
-          <span className="text-primary">Revenue</span>,{" "}
+          We Build Automated <span className="text-primary">AI Agents</span>{" "}
+          for <span className="text-primary">Revenue</span>,{" "}
           <span className="text-primary">Operations</span> &{" "}
-          <span className="text-primary">Market</span> Decisions
+          <span className="text-primary">Market</span> Execution
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty font-body text-lg leading-relaxed text-muted-foreground md:text-xl">
-          We build production-grade AI systems for SMB operators, crypto
-          teams, and founding crews who need clear, measurable outcomes
-          in weeks, not quarters.
+          TechGenie designs, ships, and manages production-grade AI agent
+          systems for teams that need measurable outcomes in weeks, not
+          quarters — autonomous where safe, human-approved where critical.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

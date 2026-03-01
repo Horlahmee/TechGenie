@@ -16,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "TechGenie | AI Systems for Revenue, Operations & Markets",
+  title: "TechGenie | Automated AI Agent Builder Agency",
   description:
-    "TechGenie builds AI-powered systems that automate revenue operations, accelerate crypto and market research, and deliver rapid MVPs. Get measurable outcomes, fast.",
+    "TechGenie builds automated AI agent systems for revenue, operations, and market execution with measurable outcomes and human-safe controls.",
   keywords: [
     "AI automation",
     "revenue operations",
@@ -31,18 +31,18 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "TechGenie | AI Systems for Revenue, Operations & Markets",
+    title: "TechGenie | Automated AI Agent Builder Agency",
     description:
-      "AI-powered systems that automate revenue operations, accelerate market research, and deliver rapid MVPs.",
+      "Automated AI agent systems for revenue, operations, and market execution.",
     type: "website",
     locale: "en_US",
     siteName: "TechGenie",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechGenie | AI Systems for Revenue, Operations & Markets",
+    title: "TechGenie | Automated AI Agent Builder Agency",
     description:
-      "AI-powered systems that automate revenue operations, accelerate market research, and deliver rapid MVPs.",
+      "Automated AI agent systems for revenue, operations, and market execution.",
   },
   robots: {
     index: true,
@@ -83,7 +83,7 @@ function JsonLd() {
     "@type": "Organization",
     name: "TechGenie",
     description:
-      "AI-powered systems for revenue operations, market research, and rapid MVP delivery.",
+      "Automated AI agent systems for revenue, operations, and market execution.",
     email: "techgeniexyz@gmail.com",
       url: "https://techgeniexyz.vercel.app",
     serviceType: [

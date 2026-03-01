@@ -7,7 +7,7 @@ import { trackEvent } from "@/lib/analytics"
 const SERVICES = [
   {
     icon: BarChart3,
-    title: "Revenue & Ops Automation",
+    title: "Revenue & Ops Agent Systems",
     problem:
       "Manual workflows, fragmented tools, and bottlenecks that slow growth and burn team bandwidth.",
     approach:
@@ -15,7 +15,7 @@ const SERVICES = [
     outcomes: [
       "Reduce manual ops overhead by 60-80%",
       "Unify fragmented data across platforms",
-      "Automate lead scoring, outreach sequencing, and reporting",
+      "Automate lead scoring, follow-up sequencing, and reporting",
       "Free your team to focus on high-leverage work",
     ],
     id: "revenue-ops",
@@ -60,7 +60,7 @@ export function ServicesGrid() {
           What We Build
         </p>
         <h2 className="font-sans text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-          Three Pillars of AI-Powered Delivery
+          Three Pillars of AI Agent Delivery
         </h2>
         <p className="mt-4 mx-auto max-w-2xl font-body text-muted-foreground leading-relaxed">
           Each engagement is scoped to a specific problem and delivered as a
@@ -126,7 +126,7 @@ export function ServicesGrid() {
               }
               className="mt-6 inline-flex items-center gap-2 font-body text-sm font-medium text-primary transition-colors hover:text-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
             >
-              Discuss This Service
+              Design My Agent Stack
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
             </a>
           </div>
