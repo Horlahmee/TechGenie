@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react"
+import { Mail, ArrowRight } from "lucide-react"
 import { SectionWrapper } from "@/components/section-wrapper"
 import { EmailCTA } from "@/components/email-cta"
 
@@ -15,15 +15,22 @@ export function CTASection() {
         </h2>
 
         <p className="mt-4 font-body text-lg leading-relaxed text-muted-foreground">
-          Tell us what you need. We will scope the right solution and get back
-          to you within 24 hours with a clear plan and timeline.
+          Share your workflow bottleneck and target outcome. We’ll return a practical
+          implementation plan with clear scope and timeline.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <EmailCTA location="final-cta" size="lg">
+          <EmailCTA location="final-cta" size="lg" className="tg-btn-primary">
             <Mail className="mr-2 h-4 w-4" />
-Book AI Agent Discovery
+            Book AI Agent Discovery
           </EmailCTA>
+          <a
+            href="#services"
+            className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-secondary/60 px-6 py-3 font-body text-sm font-medium text-secondary-foreground transition-colors duration-200 hover:bg-secondary/80"
+          >
+            Review Service Options
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </a>
         </div>
 
         <p className="mt-6 font-body text-sm text-muted-foreground">
@@ -33,4 +40,3 @@ Book AI Agent Discovery
     </SectionWrapper>
   )
 }
-

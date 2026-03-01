@@ -21,13 +21,13 @@ export function HeroSection() {
                 </span>
               </div>
 
-              <h1 className="max-w-3xl text-balance font-sans text-4xl font-bold leading-[1.04] tracking-tight md:text-6xl lg:text-7xl">
-                Build an <span className="tg-gradient-text">AI Agent Workforce</span> for Your Business
+              <h1 className="max-w-3xl text-balance font-sans text-4xl font-bold leading-[1.04] tracking-tight md:text-[62px] lg:text-7xl">
+                Build an <span className="tg-gradient-text">AI Agent Workforce</span> That Actually Runs Operations
               </h1>
 
               <p className="mt-6 max-w-2xl text-pretty font-body text-base leading-relaxed text-muted-foreground md:text-lg">
-                TechGenie designs, ships, and manages production-grade agent systems that run core operations with
-                clear accountability — autonomous where safe, human-approved where critical.
+                We design, ship, and manage production-grade agent systems for healthcare,
+                logistics, and real estate teams — with clear accountability and human approval for sensitive actions.
               </p>
 
               <p className="mt-4 font-body text-sm text-accent">
@@ -40,13 +40,17 @@ export function HeroSection() {
                   Book AI Agent Discovery
                 </EmailCTA>
                 <a
-                  href="#services"
+                  href="#process"
                   className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-secondary/60 px-6 py-3 font-body text-sm font-medium text-secondary-foreground transition-colors duration-200 hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  Explore Services
+                  See How It Works
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </a>
               </div>
+
+              <p className="mt-3 font-body text-xs text-muted-foreground">
+                Typical first reply within 24 hours with scoped next steps.
+              </p>
             </div>
 
             <div className="space-y-4">
