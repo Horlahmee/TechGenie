@@ -10,72 +10,102 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 210 20% 95%;
-    --card: 220 18% 10%;
-    --card-foreground: 210 20% 95%;
-    --popover: 220 18% 10%;
-    --popover-foreground: 210 20% 95%;
-    --primary: 195 100% 50%;
-    --primary-foreground: 220 20% 7%;
-    --secondary: 220 16% 16%;
-    --secondary-foreground: 210 20% 90%;
-    --muted: 220 14% 14%;
-    --muted-foreground: 215 15% 55%;
-    --accent: 160 70% 45%;
-    --accent-foreground: 220 20% 7%;
+    --background: 234 40% 8%;
+    --foreground: 220 30% 96%;
+    --card: 233 32% 13%;
+    --card-foreground: 220 30% 96%;
+    --popover: 233 32% 13%;
+    --popover-foreground: 220 30% 96%;
+    --primary: 191 100% 54%;
+    --primary-foreground: 236 45% 10%;
+    --secondary: 239 28% 19%;
+    --secondary-foreground: 220 30% 92%;
+    --muted: 237 20% 18%;
+    --muted-foreground: 225 16% 70%;
+    --accent: 286 96% 72%;
+    --accent-foreground: 236 45% 10%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 14% 18%;
-    --input: 220 14% 18%;
-    --ring: 195 100% 50%;
-    --chart-1: 195 100% 50%;
-    --chart-2: 160 70% 45%;
-    --chart-3: 220 16% 40%;
-    --chart-4: 195 80% 65%;
-    --chart-5: 160 50% 60%;
-    --radius: 0.625rem;
-    --sidebar-background: 220 18% 10%;
-    --sidebar-foreground: 210 20% 95%;
-    --sidebar-primary: 195 100% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 14% 14%;
-    --sidebar-accent-foreground: 210 20% 95%;
-    --sidebar-border: 220 14% 18%;
-    --sidebar-ring: 195 100% 50%;
+    --border: 236 23% 24%;
+    --input: 236 23% 24%;
+    --ring: 191 100% 54%;
+    --chart-1: 191 100% 54%;
+    --chart-2: 286 96% 72%;
+    --chart-3: 248 95% 70%;
+    --chart-4: 167 86% 58%;
+    --chart-5: 329 92% 68%;
+    --radius: 0.9rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(900px 500px at 15% -10%, hsl(195 100% 50% / 0.12), transparent 60%),
-      radial-gradient(700px 420px at 90% 0%, hsl(160 70% 45% / 0.10), transparent 58%),
-      linear-gradient(180deg, hsl(220 20% 7%), hsl(220 22% 6%));
+      radial-gradient(900px 500px at 10% -10%, hsl(286 96% 72% / 0.25), transparent 60%),
+      radial-gradient(780px 440px at 90% -12%, hsl(191 100% 54% / 0.25), transparent 58%),
+      radial-gradient(980px 520px at 50% 115%, hsl(248 95% 70% / 0.18), transparent 62%),
+      linear-gradient(180deg, hsl(234 40% 8%), hsl(236 38% 7%));
     background-attachment: fixed;
   }
+
   html {
     scroll-behavior: smooth;
   }
 }
 
 @layer components {
-  .tg-glass {
-    @apply bg-card/70 backdrop-blur-md border border-border/80;
+  .tg-shell {
+    @apply relative overflow-hidden rounded-[28px] border border-white/10 bg-card/70 backdrop-blur-xl;
+    box-shadow:
+      0 40px 80px hsl(235 60% 4% / 0.45),
+      inset 0 1px 0 hsl(0 0% 100% / 0.12);
   }
 
   .tg-card {
-    @apply rounded-2xl border border-border/80 bg-card/90 backdrop-blur-sm shadow-[0_1px_0_hsl(0_0%_100%_/_0.04)_inset,0_24px_50px_hsl(220_45%_2%_/_0.35)];
+    @apply rounded-2xl border border-white/10 bg-card/75 backdrop-blur-md;
+    box-shadow:
+      0 16px 30px hsl(235 58% 4% / 0.32),
+      inset 0 1px 0 hsl(0 0% 100% / 0.08);
+  }
+
+  .tg-glow {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .tg-glow::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(120deg, hsl(286 96% 72% / 0.55), hsl(191 100% 54% / 0.45), transparent 60%);
+    filter: blur(14px);
+    opacity: 0.55;
   }
 
   .tg-grid-bg {
     background-image:
-      linear-gradient(to right, hsl(220 14% 20% / 0.25) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(220 14% 20% / 0.22) 1px, transparent 1px);
-    background-size: 32px 32px;
+      linear-gradient(to right, hsl(236 23% 30% / 0.22) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(236 23% 30% / 0.2) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  .tg-gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  .tg-btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-medium text-primary-foreground transition-all duration-200;
+    background: linear-gradient(135deg, hsl(191 100% 54%), hsl(286 96% 72%));
+    box-shadow: 0 8px 24px hsl(286 96% 72% / 0.32);
+  }
+
+  .tg-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px hsl(286 96% 72% / 0.4);
   }
 }
